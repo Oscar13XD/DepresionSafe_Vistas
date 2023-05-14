@@ -1,0 +1,329 @@
+﻿@{
+    ViewData["Title"] = "Depression Safe";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="~/img/Home/favicon.PNG" />
+    <link href="~/css/Home/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/Home/style.css" rel="stylesheet">
+
+    <link href="~/css/Home/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="~/css/Home/circle-menu.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Depression Safe</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="#services">Historia</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">consejos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" asp-action="CerrarSesion" asp-controller="IniciarSesion">Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <header id="page-top">
+        <div class="wrap-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <strong><img src="~/img/Home/logo.png" width="200" height="200" alt=""></strong>
+                        <div class="intro-text">
+                            <div class="intro-lead-in">Conocer te permitira prevenir</div>
+                            <div class="intro-heading">Siempre tendras una salida</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+    <div id="c-circle-nav" class="c-circle-nav">
+        <button id="c-circle-nav__toggle" class="c-circle-nav__toggle">
+            <span>Toggle</span>
+        </button>
+        <ul class="c-circle-nav__items">
+            <li class="c-circle-nav__item">
+                <a href="#" class="c-circle-nav__link">
+                    <center><img src="~/img/Home/House.png" /></center>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="page-content" class="index-page">
+
+
+        <section class="box-content " id="services">
+            <div class="container">
+                <div class="row heading">
+                    <div class="col-lg-12">
+                        <h2>Historia</h2>
+                        <hr class="line02">
+                        <div class="intro">Veamos los antecedentes</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 services-item">
+                        <div class="wrap-img">
+                            <img src="~/img/Home/Magnifier.png" />
+                        </div>
+                        <h3 class="services-heading">Colombia con indices altos en depresión</h3>
+                        <p>Según la OMS, este trastorno mental afecta al 4,7 por ciento de los colombianos, un porcentaje que, según algunos estudios desarrollados en el país, podría llegar hasta los 19 puntos.</p>
+                        <button type="submit" class="btn btn-2 ">
+                            <a href="https://www.javeriana.edu.co/mentalpuntodeapoyo/?p=281"</a>Mas </a>
+                        </button>
+                    </div>
+                    <div class="col-sm-4 services-item">
+                        <div class="wrap-img">
+                            <img src="~/img/Home/terra.png" />
+                        </div>
+                        <h3 class="services-heading">La depresion en el mundo</h3>
+                        <p>La depresión es una enfermedad frecuente en todo el mundo, pues se estima que afecta a un 3,8% de la población, incluidos un 5% de los adultos y un 5,7% de los adultos de más de 60 años </p>
+
+                        <button type="submit" class="btn btn-2 ">
+                            <a href="https://www.ecartelera.com/noticias/17568/studio-ghibli-hayao-miyazaki-historia-directores-fabrica-suenos-japonesa/">Mas</a>
+                        </button>
+                    </div>
+                    <div class="col-sm-4 services-item">
+                        <div class="wrap-img">
+                            <img src="~/img/Home/omg.png" />
+                        </div>
+                        <h3 class="services-heading">Diagnostico y tratamiento</h3>
+                        <p>Según la intensidad y tipología de los episodios depresivos a lo largo del tiempo, los proveedores de atención de salud  pueden ofrecer tratamientos psicológicos, como la activación conductual, la terapia cognitiva conductual y la psicoterapia interpersonal, y/o medicamentos antidepresivos, como los inhibidores selectivos de la recaptación de serotonina (ISRS) y los antidepresivos tricíclicos.</p>
+                        <button type="submit" class="btn btn-2 ">
+                            <a href="https://www.who.int/es/news-room/fact-sheets/detail/depression#:~:text=S%C3%ADntomas%20Y%20Tipolog%C3%ADas"</a>Mas
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ////////////Consejos -->
+        <section class="box-content box-style" id="portfolio">
+            <div class="container">
+                <div class="row heading">
+                    <div class="col-lg-12">
+                        <h2>Consejos</h2>
+                        <hr class="line01">
+                        <div class="intro">Estos consejos te ayudaran a mejorar día a día </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=se62UwCxUrI" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/1.png" width="480" height="260" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>manejo de las emociones inteligentemente</h4>
+                            <p class="text-muted">Es bueno valorar, percibir y expresar emociones, comprenderlas y regularlas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=bKhnelFjSD0" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/2.png" width="480" height="260" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>Realiza ejercicios físicos</h4>
+                            <p class="text-muted">El ejercicio físico aporta muchos beneficios, tanto físicos como psicológicos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=Cu7iaqR1B7A" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/3.png" class="img-responsive" width="480" height="260" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>Alimentación Saludable</h4>
+                            <p class="text-muted">Una dieta rica en folato y vitaminas del grupo B (vegetales) son esenciales en la formación de neurotransmisores que mejoran el estado de ánimo. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=1gz-xf0JWCk" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/4.png" class="img-responsive" width="480" height="260" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>Vida social activa y practicar hobbies.</h4>
+                            <p class="text-muted">Rodearse de buenos amigos. Acudir a eventos y practicar pasatiempos es positivo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=ybl0J9oiPwI" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/5.png" class="img-responsive" width="480" height="260" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>Vive el presente</h4>
+                            <p class="text-muted">Aprende a vivir en el presente te ayuda a mejorar el bienestar y protege contra la depresión.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=RiuQiSudsgI" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/6.png" class="img-responsive" width="480" height="260" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>Acéptate y perdónate</h4>
+                            <p class="text-muted">Esto es fundamental para prevenir la depresión. Es necesario perdonarnos por los errores cometidos</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=QAeTs61PWVY" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/7.png" class="img-responsive" width="480" height="260" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>Duerme lo necesario</h4>
+                            <p class="text-muted">Unas buenas horas de sueño adecuado mejoran el bienestar emocional.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 portfolio-item">
+                        <a href="https://www.youtube.com/watch?v=vJun6ep83Jw" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-eye fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="~/img/Home/8.png" class="img-responsive" width="450" height="230" alt="">
+                        </a>
+                        <div class="portfolio-caption center">
+                            <h4>Cuida el nivel de estrés.</h4>
+                            <p class="text-muted">Disminuir el estrés es beneficioso para evitar la aparición de depresión o su empeoramiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ////////////Sub -->
+        <section class="box-content box-style-1" id="subcribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 sub-text">
+                        <h2>Suscribete ahora</h2>
+                        <p>Reconstruye tu santuario mental</p>
+                    </div>
+                    <div class="col-md-6 sub-form">
+                        <form id="subcribe-form">
+                            <input id="TxtCorreo" type="text" size="40" placeholder="Ingresa tu correo..." />
+                            <input type="submit" name="Enviar" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- /////////////////////////////////////////f -->
+    <footer>
+        <div class="wrap-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-footer footer-1">
+                        <div class="content">
+                            <a href="#"><img src="~/img/Home/logo.png" alt=""></a>
+                            <p>
+                                Ten encuenta que todo es de forma informativa por el momento y estamos mejorando paratu salud mental.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright &copy; DepressionSafe
+                        </div>
+                    </div>
+                </div>
+    </footer>
+    <!-- Footer -->
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/js/Home/bootstrap.min.js"></script>
+    <script src="~/js/Home/index.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="~/js/Home/agency.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="~/js/Home/jquery.easing.min.js"></script>
+    <script src="~/js/Home/classie.js"></script>
+    <script src="~/js/Home/cbpAnimatedHeader.js"></script>
+    <script src="~/js/Home/circleMenu.min.js"></script>
+
+    <script>
+        var token = '@ViewBag.Token';
+        var editar = false;
+    </script>
+</body>
+</html>

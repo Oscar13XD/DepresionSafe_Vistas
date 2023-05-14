@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Inicio";
+    Layout = "_LayoutIniciarSesion";
+}
+<head>
+    <link rel="stylesheet" href="~/css/IniciarSesion/style.css">
+</head>
+<body>
+    <div class="login-card-containers">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="~/img/Home/Logo.png" alt="logo">
+            </div>
+            <div class="login-card-header">
+                <h1>Iniciar sesión</h1>
+                <div>Por favor, iniciar sesión para usar la plataforma</div>
+            </div>
+            <form class="login-card-form" id="IniciarSesion">
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded">mail</spam>
+                    <input id="CorreoUsuario" type="text" placeholder="Ingresar correo" required autofocus>
+                </div>
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded">lock</spam>
+                    <input id="PasswordUsuario" type="password" placeholder="Ingrese contraseña" required>
+                </div>
+                <div class="form-item-other">
+                    <a asp-action="RecuperarPassword" asp-controller="IniciarSesion">Olvidé mi contraseña</a>.
+                </div>
+                <button class="form-item-icon material-symbols-rounded" type="submit">Iniciar sesión</button>
+            </form>
+            <div class="login-card-footer">
+                No tienes una cuenta? <a asp-action="Registro" asp-controller="IniciarSesion">Crear una cuenta</a>.
+            </div>
+        </div>
+    </div>
+    @section Scripts{
+        <script>
+            var crearToken = '@Url.Action("CrearToken","IniciarSesion")';
+        </script>
+        <script src=~/js/IniciarSesion/IniciarSesion.js></script>
+    }
+    
+</body>
+

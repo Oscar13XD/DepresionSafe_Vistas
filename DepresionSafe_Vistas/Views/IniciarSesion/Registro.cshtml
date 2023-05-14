@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Registro";
+    Layout = "_LayoutIniciarSesion";
+}
+<head>
+    <link rel="stylesheet" href="~/css/IniciarSesion/Registro/style.css">
+</head>
+<body>
+    <div class="login-card-containers">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="~/img/Home/Logo.png" alt="logo">
+            </div>
+            <div class="login-card-header">
+                <h1>Crear cuenta</h1>
+                <div>Por favor, Ingrese sus datos para registrarse</div>
+            </div>
+            <form class="login-card-form" id="RegistroUsuario">
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded">mail</spam>
+                    <input id="CorreoUsuario" type="email" placeholder="Ingresar correo" required autofocus>
+                </div>
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded"></spam>
+                    <input id="CedulaUsuario" type="text" placeholder="Cedula" required autofocus>
+                </div>
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded"></spam>
+                    <input id="NombreUsuario" type="text" placeholder="Nombres" required autofocus>
+                </div>
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded"></spam>
+                    <input id="TelefonoUsuario" type="text" min="0" placeholder="Telefono" required autofocus>
+                </div>
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded">lock</spam>
+                    <input id="PasswordUsuario" type="password" placeholder="Contreseña" required>
+                </div>
+                <a asp-action="index" asp-controller="IniciarSesion">VOLVER</a>
+                <button class="form-item-icon material-symbols-rounded" type="submit">Registrarme</button>
+            </form>
+        </div>
+    </div>
+    @section Scripts{
+        <script src=~/js/IniciarSesion/Registro.js></script>
+    }
+</body>

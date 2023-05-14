@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Reestablecer";
+    Layout = "_LayoutIniciarSesion";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/IniciarSesion/style.css">
+</head>
+<body>
+    <div class="login-card-containers">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="~/img/Home/Logo.png" alt="logo">
+            </div>
+            <form class="login-card-form" id="ReestablecerPassword">
+                <div class="form-item">
+                    <spam class="form-item-icon material-symbols-rounded">mail</spam>
+                    <input id="PasswordUsuario" type="password" placeholder="Ingresar contraseña" required autofocus>
+                </div>
+                <button class="form-item-icon material-symbols-rounded" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    @section Scripts{
+        <script src=~/js/IniciarSesion/Reestablecer.js></script>
+    }
+</body>
