@@ -13,7 +13,20 @@ namespace DepresionSafe_Vistas.Controllers
             }
             else
             {
-                return NotFound();
+                return RedirectToAction("Index", "IniciarSesion");
+            }
+        }
+
+        public IActionResult ActualizarDatos()
+        {
+            if (HttpContext.Session.GetString("token") != null && HttpContext.Session.GetString("rol") == "USUARIO")
+            {
+                ViewBag.Token = HttpContext.Session.GetString("token");
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index","IniciarSesion");
             }
         }
     }
